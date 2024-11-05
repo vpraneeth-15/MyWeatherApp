@@ -1,0 +1,68 @@
+[versions]
+agp = "8.7.1"
+kotlin = "2.0.0"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.8.6"
+activityCompose = "1.9.3"
+composeBom = "2024.04.01"
+splashVersion = "1.0.1"
+dataStoreVersion = "1.1.1"
+hiltVersion = "2.51"
+kotlinKsp = "2.0.0-1.0.22"
+hiltNavigation = "1.2.0"
+androidxNavigationVersion = "2.6.0"
+retrofitVersion = "2.9.0"
+squareLoggingVersion="4.12.0"
+squareGsonVersion="2.9.0"
+coilVersion = "2.4.0"
+androidLocationVersion="21.3.0"
+mockkVersion="1.13.5"
+cashTurbineVersion="1.0.0"
+kotlinxCoroutinesTestVersion="1.7.3"
+kotlinxSerializationJson = "1.6.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+androidx-splash = { group = "androidx.core", name = "core-splashscreen", version.ref = "splashVersion" }
+androidx-datastore = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "dataStoreVersion" }
+dagger-hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hiltVersion" }
+dagger-hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hiltVersion" }
+hilt-navigation = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigation" }
+androidx-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "androidxNavigationVersion" }
+
+squareup-retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofitVersion" }
+squareup-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "squareLoggingVersion"}
+squareup-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "squareGsonVersion"}
+
+coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coilVersion" }
+android-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "androidLocationVersion" }
+
+io-mockk = { group = "io.mockk", name = "mockk", version.ref = "mockkVersion" }
+cash-turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "cashTurbineVersion"}
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinxCoroutinesTestVersion"}
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+hiltPlugin = { id = "com.google.dagger.hilt.android", version.ref = "hiltVersion" }
+jetbrainsKotlinKsp = { id = "com.google.devtools.ksp", version.ref = "kotlinKsp" }
